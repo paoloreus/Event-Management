@@ -22,6 +22,16 @@ namespace Event_Management
         public bool addEvent(string name, string venue, Date eventDate, int maxAttendees)
         {
             if (numEvents >= maxEvents) { return false; }
+            for(int i = 0; i < numEvents; i++)
+            {
+                if (eventList[i].getVenue() == venue && eventList[i].getEventDay() == eventDate.day
+                    && eventList[i].getEventMonth() == eventDate.month && eventList[i].getEventYear() == eventDate.year
+                    )
+                {
+                    Console.WriteLine("Error");
+                    return false;
+                }
+            }
             Event e = new Event(currentEventId, name, venue, eventDate, maxAttendees);
             eventList[numEvents] = e;
             numEvents++;
