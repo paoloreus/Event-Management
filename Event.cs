@@ -32,6 +32,14 @@ namespace Event_Management
             public string getEventName() { return eventName; }
             public string getVenue() { return venue; }
 
+            public Date getEventDate() { return eventDate; }
+
+            public int getEventDay() { return eventDate.day; }
+
+            public int getEventMonth() { return eventDate.month; }
+
+            public int getEventYear() { return eventDate.year; }
+
             public int getMaxAttendees() { return maxAttendees; }
             public int getNumAttendees() { return numAttendees; }
 
