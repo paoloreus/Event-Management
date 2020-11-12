@@ -75,18 +75,33 @@ namespace Event_Management
 
         public static void registerCustomer()
         {
-            int cid;
-            int eid;
-
+            int cid = 0;
+            int eid = 0;
+            bool validEvent = false;
+            bool validCustomer = false;
             Console.Clear();
             Console.WriteLine("-----------RSVP Event----------");
-            Console.WriteLine("Please enter the Event ID: ");
-            eid = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Please enter the Customer ID: ");
-            cid = Int32.Parse(Console.ReadLine());
-            //RSVP regist = new RSVP();
-            eCoord.registerID(cid, eid);
+            while (validEvent == false)
+            {
+                Console.WriteLine("Please enter the Event ID: ");
+                if (Int32.TryParse(Console.ReadLine(), out eid))
+                {
+                    validEvent = true;
+                }
+            }
+            while (validCustomer == false)
+            {
+                Console.WriteLine("Please enter the Customer ID: ");
+                if (Int32.TryParse(Console.ReadLine(), out cid))
+                {
+                    validCustomer = true;
+                }
+            }
 
+            if (validCustomer == true && validEvent == true)
+            {
+                eCoord.registerID(cid, eid);
+            }
         }
 
 
