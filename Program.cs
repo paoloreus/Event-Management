@@ -73,6 +73,22 @@ namespace Event_Management
             Console.ReadKey();
         }
 
+        public static void registerCustomer()
+        {
+            int cid;
+            int eid;
+
+            Console.Clear();
+            Console.WriteLine("-----------RSVP Event----------");
+            Console.WriteLine("Please enter the Event ID: ");
+            eid = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter the Customer ID: ");
+            cid = Int32.Parse(Console.ReadLine());
+            //RSVP regist = new RSVP();
+            eCoord.registerID(cid, eid);
+
+        }
+
 
         public static void addEvent()
         {
@@ -219,7 +235,7 @@ namespace Event_Management
             int choice = getValidChoice(3, menu);
             while (choice != 3)
             {
-                if (choice == 1) { }
+                if (choice == 1) { registerCustomer(); }
                 if (choice == 2) { }
 
                 choice = getValidChoice(3, menu);
