@@ -10,12 +10,14 @@ namespace Event_Management
         private int maxEvents;
         private int numEvents;
         private Event[] eventList;
+        private int totalAttendees;
 
         public EventManager(int idSeed, int max)
         {
             currentEventId = idSeed;
             maxEvents = max;
             numEvents = 0;
+            totalAttendees = 0;
             eventList = new Event[maxEvents];
         }
 
@@ -47,6 +49,21 @@ namespace Event_Management
                     return x;
             }
             return -1;
+        }
+
+        public int getNumEvents()
+        {
+            return numEvents;
+        }
+
+        public int getTotalAttendees()
+        {
+            for(int i = 0; i < numEvents; i++)
+            {
+                totalAttendees += eventList[i].getMaxAttendees();
+            }
+
+            return totalAttendees; 
         }
 
         public bool eventExists(int eid)
