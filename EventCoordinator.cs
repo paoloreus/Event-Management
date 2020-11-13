@@ -8,34 +8,43 @@ namespace Event_Management
     {
         CustomerManager custMan;
         EventManager eventMan;
-        Event e;
+        Event e;  //keep an eye on this later cause we might not need it
+        RSVP reg; //^
+        RSVP[] regs;
+        private static int ticketID;
 
         public EventCoordinator(int custIdSeed, int maxCust, int eventIdSeed, int maxEvents)
         {
             custMan = new CustomerManager(custIdSeed, maxCust);
             eventMan = new EventManager(eventIdSeed, maxEvents);
+            //reg = new RSVP(eventMan, custMan);
+            ticketID = 0;
         }
 
-        public bool registerID(int cid, int eid) {  //registers a customer to a specific event
-            if (custMan.customerExist(cid) && eventMan.eventExists(eid))
-            {
-                e = eventMan.getEvent(eid);   //e will reference the event object returned here
-               
-                if (e.getNumAttendees() < e.getMaxAttendees())
-                {
+         public void setReg(EventManager eventMan) // continue this later
+        {
+            this.regs = new RSVP[eventMan.getTotalAttendees()];
+        }
 
-                    e.addAttendee(custMan.getCustomer(cid));
-                    Console.WriteLine("RSVP has been successfully made");
-                    Console.WriteLine("Press any key to continue ... ");
-                    return true;
-                }
+        public RSVP[] getRegs()
+        {
+            return regs;
+        }
+        
+         public bool register(int cid, int eid)  //consider it add RSVP
+        {
+            setReg(eventMan);
+            getRegs();
+            regs[ticketID] = new RSVP(eventMan, custMan, ticketID);   
+            regs[ticketID].setRegID(ticketID);              //use the unique generated ID and assign it to RSVP
+           
+            if (regs[ticketID].registerID(cid, eid))
+            {
+                ticketID++;
+                return true;
             }
-            
-                Console.WriteLine("RSVP Failed");
-                Console.WriteLine("Press any key to continue ... ");
-                //Console.ReadLine();
-                return false;
-            
+
+            return false;
         }
 
         //customer related methods
