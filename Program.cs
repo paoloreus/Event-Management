@@ -100,7 +100,7 @@ namespace Event_Management
 
             if (validCustomer == true && validEvent == true)
             {
-                eCoord.registerID(cid, eid);
+                eCoord.register(cid, eid);
             }
         }
 
