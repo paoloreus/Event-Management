@@ -18,7 +18,7 @@ namespace Event_Management
             custMan = new CustomerManager(custIdSeed, maxCust);
             eventMan = new EventManager(eventIdSeed, maxEvents);
             //reg = new RSVP(eventMan, custMan);
-            ticketID = 0;
+            ticketID = 1;
         }
 
          public void setReg(EventManager eventMan) // continue this later
