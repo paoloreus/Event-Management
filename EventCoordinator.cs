@@ -8,8 +8,6 @@ namespace Event_Management
     {
         CustomerManager custMan;
         EventManager eventMan;
-        Event e;  //keep an eye on this later cause we might not need it
-        RSVP reg; //^
         RSVP[] regs;
         private static int ticketID;
 
@@ -17,7 +15,7 @@ namespace Event_Management
         {
             custMan = new CustomerManager(custIdSeed, maxCust);
             eventMan = new EventManager(eventIdSeed, maxEvents);
-            //reg = new RSVP(eventMan, custMan);
+            regs = new RSVP[maxCust * maxEvents];
             ticketID = 1;
         }
 
@@ -33,8 +31,8 @@ namespace Event_Management
         
          public bool register(int cid, int eid)  //consider it add RSVP
         {
-            setReg(eventMan);
-            getRegs();
+            //setReg(eventMan);
+            //getRegs();
             regs[ticketID] = new RSVP(eventMan, custMan, ticketID);   
             regs[ticketID].setRegID(ticketID);              //use the unique generated ID and assign it to RSVP
            
