@@ -82,6 +82,18 @@ namespace Event_Management
             return eventMan.getEventInfo(id);
         }
 
+        public void generateTicket(int custID, int eventID)
+        {
+            string date = DateTime.Now.ToString(@"MM\/dd\/yyyy h\:mm tt");
+            Console.WriteLine("------------------Ticket Details------------------");
+            Console.WriteLine("Your Unique RSVP Ticket ID: "+ticketID);
+            Console.WriteLine("Date and Time of Booking: "+date);
+            Console.WriteLine(custMan.TicketInfo(custID));
+            Console.WriteLine(eventMan.TicketInfo(eventID));
+            Console.WriteLine("--------------------------------------------------");
+            Console.ReadKey();
+        }
+
 
     }
 }

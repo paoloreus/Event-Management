@@ -60,6 +60,12 @@ namespace Event_Management
             return customerList[loc].ToString();
         }
 
+        public string TicketInfo(int cid)
+        {
+            int loc = findCustomer(cid);
+            return customerList[loc].ForTicket();
+        }
+
         public bool deleteCustomer(int cid)
         {
             int loc = findCustomer(cid);

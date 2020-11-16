@@ -36,6 +36,14 @@ namespace Event_Management
             return s;
         }
 
+        public string ForTicket()
+        {
+            string s = "-----------------Customer Detials---------------";
+            s += "\n Customer Name: " + firstName + " " + lastName;
+            s += "\n Phone Number: " + phone;
+            return s;
+        }
+
     }
 
 

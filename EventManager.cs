@@ -94,6 +94,12 @@ namespace Event_Management
             if (loc == -1) { return "There is no event with id " + eid + "."; }
             return eventList[loc].ToString();
         }
+
+        public string TicketInfo(int eid)
+        {
+            int loc = findEvent(eid);
+            return eventList[loc].ForTicket();
+        }
         public string getEventList()
         {
             string s = "Event List:";
