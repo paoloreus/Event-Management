@@ -100,7 +100,6 @@ namespace Event_Management
 
             if (validCustomer == true && validEvent == true)
             {
-                eCoord.generateTicket(cid, eid);
                 eCoord.register(cid, eid);
             }
         }

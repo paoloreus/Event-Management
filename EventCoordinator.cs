@@ -38,6 +38,7 @@ namespace Event_Management
            
             if (regs[ticketID].registerID(cid, eid))
             {
+                generateTicket(cid, eid);
                 ticketID++;
                 return true;
             }
