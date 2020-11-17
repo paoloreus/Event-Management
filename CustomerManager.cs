@@ -78,7 +78,7 @@ namespace Event_Management
         public string getCustomerList()
         {
             string s = "Customer List:";
-            s = s + "\nNumber \t Name \t  \t Phone";
+            s = s + "\nNumber \tName \t  \tPhone";
             for (int x = 0; x < numCustomers; x++)
             {
                 s = s + "\n" + customerList[x].getId() + "\t" + customerList[x].getFirstName() + "\t" + customerList[x].getLastName() + "\t" + customerList[x].getPhone();
