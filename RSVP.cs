@@ -94,9 +94,7 @@ namespace Event_Management
             return s;
         }
 
-        public string viewRSVP()  //c was null, focus on that
-                                  //create a setter and a getter for event and customer
-                                  //use them to add as parameters in this method
+        public string viewRSVP() 
         {
             string s = "Date: " + date;
             s += "\nRSVP Number: " + regID;
