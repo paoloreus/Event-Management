@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -75,7 +75,7 @@ namespace Event_Management
             string s = "\nCustomers registered :";
             for (int x = 0; x < numAttendees; x++)
             {
-                s = s + "\n" + attendeeList[x].getFirstName() + " " + attendeeList[x].getLastName();
+                s = s + "\n" + attendeeList[x].getId() + "   " + attendeeList[x].getFirstName() + " " + attendeeList[x].getLastName();
             }
             return s;
         }
@@ -103,4 +103,3 @@ namespace Event_Management
     }
 
 }
-
