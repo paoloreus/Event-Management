@@ -12,7 +12,7 @@ namespace StarWars
 {
     public partial class Form1 : Form
     {
-        public string randomID = "101";
+       EventCoordinator eCoord = new EventCoordinator(200, 1000, 101, 5000);
         public Form1()
         {
             InitializeComponent();
@@ -25,14 +25,14 @@ namespace StarWars
 
         private void addCustomerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmCustomer nForm = new FrmCustomer(this);
+            FrmCustomer nForm = new FrmCustomer(this, eCoord);
             this.Hide();
             nForm.Show();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Thank you for using Star Wars Management!", "Close Window", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            MessageBox.Show("Thank you for using Star Wars Management!", "Close Window", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
 
@@ -43,7 +43,7 @@ namespace StarWars
 
         private void viewCustomersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            formView vForm = new formView(this);
+            formView vForm = new formView(this, eCoord);
             this.Hide();
             vForm.Show();
             
