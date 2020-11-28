@@ -50,97 +50,106 @@
             // lblCust
             // 
             this.lblCust.AutoSize = true;
-            this.lblCust.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCust.Location = new System.Drawing.Point(193, 95);
+            this.lblCust.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCust.Location = new System.Drawing.Point(36, 61);
             this.lblCust.Name = "lblCust";
-            this.lblCust.Size = new System.Drawing.Size(148, 37);
+            this.lblCust.Size = new System.Drawing.Size(155, 34);
             this.lblCust.TabIndex = 2;
             this.lblCust.Text = "First Name:";
+            this.lblCust.Visible = false;
             // 
             // lblCust2
             // 
             this.lblCust2.AutoSize = true;
-            this.lblCust2.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCust2.Location = new System.Drawing.Point(193, 127);
+            this.lblCust2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCust2.Location = new System.Drawing.Point(39, 104);
             this.lblCust2.Name = "lblCust2";
-            this.lblCust2.Size = new System.Drawing.Size(145, 37);
+            this.lblCust2.Size = new System.Drawing.Size(152, 34);
             this.lblCust2.TabIndex = 3;
             this.lblCust2.Text = "Last Name:";
+            this.lblCust2.Visible = false;
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(420, 85);
+            this.lblName.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(259, 61);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(80, 37);
+            this.lblName.Size = new System.Drawing.Size(86, 34);
             this.lblName.TabIndex = 4;
             this.lblName.Text = "Name";
+            this.lblName.Visible = false;
             // 
             // lblLast
             // 
             this.lblLast.AutoSize = true;
-            this.lblLast.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLast.Location = new System.Drawing.Point(410, 122);
+            this.lblLast.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLast.Location = new System.Drawing.Point(259, 104);
             this.lblLast.Name = "lblLast";
-            this.lblLast.Size = new System.Drawing.Size(80, 37);
+            this.lblLast.Size = new System.Drawing.Size(86, 34);
             this.lblLast.TabIndex = 5;
             this.lblLast.Text = "Name";
+            this.lblLast.Visible = false;
             // 
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(397, 159);
+            this.lblPhone.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPhone.Location = new System.Drawing.Point(259, 149);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(103, 37);
+            this.lblPhone.Size = new System.Drawing.Size(121, 34);
             this.lblPhone.TabIndex = 6;
-            this.lblPhone.Text = "Number";
+            this.lblPhone.Text = "Number:";
+            this.lblPhone.Visible = false;
             // 
             // lblCust3
             // 
             this.lblCust3.AutoSize = true;
-            this.lblCust3.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCust3.Location = new System.Drawing.Point(193, 159);
+            this.lblCust3.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCust3.Location = new System.Drawing.Point(12, 149);
             this.lblCust3.Name = "lblCust3";
-            this.lblCust3.Size = new System.Drawing.Size(183, 37);
+            this.lblCust3.Size = new System.Drawing.Size(204, 34);
             this.lblCust3.TabIndex = 7;
             this.lblCust3.Text = "Phone Number:";
+            this.lblCust3.Visible = false;
             // 
             // lblid
             // 
             this.lblid.AutoSize = true;
-            this.lblid.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblid.Location = new System.Drawing.Point(441, 57);
+            this.lblid.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblid.Location = new System.Drawing.Point(259, 18);
             this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(49, 37);
+            this.lblid.Size = new System.Drawing.Size(46, 34);
             this.lblid.TabIndex = 8;
             this.lblid.Text = "ID";
+            this.lblid.Visible = false;
             // 
             // lblCustID
             // 
             this.lblCustID.AutoSize = true;
-            this.lblCustID.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustID.Location = new System.Drawing.Point(193, 57);
+            this.lblCustID.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustID.Location = new System.Drawing.Point(27, 18);
             this.lblCustID.Name = "lblCustID";
-            this.lblCustID.Size = new System.Drawing.Size(164, 37);
+            this.lblCustID.Size = new System.Drawing.Size(177, 34);
             this.lblCustID.TabIndex = 9;
             this.lblCustID.Text = "Customer ID:";
+            this.lblCustID.Visible = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(306, 238);
+            this.button1.Location = new System.Drawing.Point(604, 504);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 35);
             this.button1.TabIndex = 10;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // formView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1372, 661);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblCustID);
             this.Controls.Add(this.lblid);
@@ -150,8 +159,9 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblCust2);
             this.Controls.Add(this.lblCust);
+            this.Location = new System.Drawing.Point(200, 60);
             this.Name = "formView";
-            this.Text = "View Customer";
+            this.Text = "View Customers";
             this.Load += new System.EventHandler(this.formView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -48,5 +48,19 @@ namespace StarWars
             vForm.Show();
             
         }
+
+        private void viewCustomerDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formDetails dForm = new formDetails(this, eCoord, false);
+            this.Hide();
+            dForm.Show();
+        }
+
+        private void deleteCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            formDetails dForm = new formDetails(this, eCoord, true);
+            this.Hide();
+            dForm.Show();
+        }
     }
 }

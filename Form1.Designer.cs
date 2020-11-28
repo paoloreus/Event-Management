@@ -103,12 +103,14 @@
             this.viewCustomerDetailsToolStripMenuItem.Name = "viewCustomerDetailsToolStripMenuItem";
             this.viewCustomerDetailsToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
             this.viewCustomerDetailsToolStripMenuItem.Text = "View Customer Details";
+            this.viewCustomerDetailsToolStripMenuItem.Click += new System.EventHandler(this.viewCustomerDetailsToolStripMenuItem_Click);
             // 
             // deleteCustomerToolStripMenuItem
             // 
             this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
             this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
             this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
+            this.deleteCustomerToolStripMenuItem.Click += new System.EventHandler(this.deleteCustomerToolStripMenuItem_Click);
             // 
             // eventToolStripMenuItem
             // 
