@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StarWars
+namespace GUIpractice
 {
     public partial class formDetails : Form
     {
@@ -26,7 +26,7 @@ namespace StarWars
             eCoord = coordinator;
             canDelete = isDeletable;
             InitializeComponent();
-         
+
         }
         private void btnSearch_Click(object sender, EventArgs e)
         {

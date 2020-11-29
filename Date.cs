@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StarWars
+namespace GUIpractice
 {
-       public class Date
+    public class Date
     {
         public int year;
         public int month; // 1 Jan, 2, Feb....

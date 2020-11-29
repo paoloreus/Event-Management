@@ -1,4 +1,4 @@
-﻿namespace StarWars
+﻿namespace GUIpractice
 {
     partial class formDetails
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StarWars
+namespace GUIpractice
 {
     public partial class formView : Form
     {
@@ -28,8 +28,8 @@ namespace StarWars
             InitializeComponent();
             Label[] labels = new Label[coordinator.getNumCustomers()];
             Label[] fields = new Label[coordinator.getNumCustomers()];
-           
-            for(int i = 0; i < coordinator.getNumCustomers(); i++)
+
+            for (int i = 0; i < coordinator.getNumCustomers(); i++)
             {
                 /* lblid.Text = coordinator.getCustomerList()[i].getId().ToString();
                  lblName.Text = coordinator.getCustomerList()[i].getFirstName();
@@ -39,7 +39,7 @@ namespace StarWars
                 fields[i] = new Label();
                 fields[i].Text = "Customer ID:";
                 fields[i].Location = new Point((x + 70), y);
-                
+
 
                 labels[i] = new Label();
                 labels[i].Text = coordinator.getCustomerList()[i].getId().ToString();
@@ -56,7 +56,7 @@ namespace StarWars
 
 
             }
-            
+
         }
         private void formView_Load(object sender, EventArgs e)
         {

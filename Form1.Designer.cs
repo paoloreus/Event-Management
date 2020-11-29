@@ -1,4 +1,4 @@
-﻿namespace StarWars
+﻿namespace GUIpractice
 {
     partial class Form1
     {
@@ -173,7 +173,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            //this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(205, 215);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(352, 256);
@@ -219,4 +219,3 @@
         private System.Windows.Forms.ToolStripMenuItem viewRSVPToolStripMenuItem;
     }
 }
-

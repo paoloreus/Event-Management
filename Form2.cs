@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StarWars
+namespace GUIpractice
 {
-    public partial class FrmCustomer : Form
+    public partial class FrmCustomer : Form 
     {
         Form1 page;
         EventCoordinator eCoord;
@@ -36,10 +36,13 @@ namespace StarWars
             page.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e, int cid)
         {
+            string id = cid.ToString();
+
             eCoord.addCustomer(txtFirst.Text, txtLast.Text, txtPhone.Text);
             MessageBox.Show("Customer Added!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Customer ID is !", id, MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
             page.Show();
         }

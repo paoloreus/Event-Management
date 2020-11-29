@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StarWars
+namespace GUIpractice
 {
     public partial class Form1 : Form
     {
-       EventCoordinator eCoord = new EventCoordinator(200, 1000, 101, 5000);
+        EventCoordinator eCoord = new EventCoordinator(200, 1000, 101, 5000);
         public Form1()
         {
             InitializeComponent();
@@ -46,7 +46,7 @@ namespace StarWars
             formView vForm = new formView(this, eCoord);
             this.Hide();
             vForm.Show();
-            
+
         }
 
         private void viewCustomerDetailsToolStripMenuItem_Click(object sender, EventArgs e)

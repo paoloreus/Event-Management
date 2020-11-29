@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StarWars
+namespace GUIpractice
 {
-       public class Customer
+    public class Customer
     {
         private int customerId;
         private string firstName;
