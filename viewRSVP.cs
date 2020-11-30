@@ -24,7 +24,7 @@ namespace GUIpractice
             eCoord = coordinator;
             page = f1;
             InitializeComponent();
-
+            textBox1.Text = eCoord.viewRegs();
         }
 
         private void label1_Click(object sender, EventArgs e)

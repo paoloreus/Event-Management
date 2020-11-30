@@ -14,6 +14,7 @@ namespace GUIpractice
     {
         Form1 page;
         EventCoordinator eCoord;
+        RSVP rsvp;
 
         public RSVPforEvent()
         {
@@ -48,7 +49,9 @@ namespace GUIpractice
             int eid = Convert.ToInt32(textBox2.Text);
             if(eCoord.register(cid, eid))
             {
-                MessageBox.Show("RSVP Successful");
+                
+                string s = rsvp.generateTicket(eid, cid);
+                MessageBox.Show("RSVP Successful\n" + s);
             }
             else
             {
